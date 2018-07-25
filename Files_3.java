@@ -14,7 +14,7 @@ public class Files_3 {
 		System.out.println("Input Name.");
 		student1.setName(reader.nextLine());
 		System.out.println("Input Grade.");
-		student1.setGrade(reader.nextLine().charAt(0));
+		student1.setGrade(reader.nextInt());
 		System.out.println("Input GPA.");
 		student1.setGpa(reader.nextDouble());
 		System.out.println(student1.getName());
@@ -34,7 +34,7 @@ public class Files_3 {
 		
 		
 		FileWriter writergrade=new FileWriter(gradef, true);
-		writergrade.write(student1.getGrade());
+		writergrade.write(String.valueOf(student1.getGrade()));
 		
 	
 		FileWriter writergpa=new FileWriter(gpaf, true);
@@ -53,5 +53,3 @@ public class Files_3 {
 		
 
 	}
-
-}
